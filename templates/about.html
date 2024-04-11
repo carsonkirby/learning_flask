@@ -1,4 +1,23 @@
-{% extends 'base.html' %}{% block body %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+</head>
+<body>
 <h1>About Us</h1>
-<p>Nikitha Nallure and Carson Kirby</p>
+<nav>
+    <a href="/">Home</a> |
+    <a href="/about">About Us</a>
+</nav>
+<p>Developed by Nikitha and Carson</p>
+{% block body %}
+  <img
+     src="{{ url_for('static', filename='Images/IMG_1681.jpg') }}"/>
+
+  <p>
+    Picture of Nikitha and Carson Working Together
+  </p>
 {% endblock %}
+</body>
+</html>
